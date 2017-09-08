@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#79919E">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#79919E" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/w"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/displayWord" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Display Text"
+        android:id="@+id/displayWord"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:textAlignment="center"
+        android:maxLines="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Definition :"
+        android:id="@+id/textView7"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/displayWord"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDefinition"
+        android:layout_below="@+id/textView7"
+        android:layout_alignRight="@+id/displayWord"
+        android:layout_alignEnd="@+id/displayWord"
+        android:layout_alignLeft="@+id/displayWord"
+        android:layout_alignStart="@+id/displayWord"
+        android:maxLines="5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/confirmupdateButton"
+        android:layout_below="@+id/editDefinition"
+        android:layout_centerHorizontal="true"
+        android:onClick="confirmupdateButtonOnClick" />
+
+</RelativeLayout>
